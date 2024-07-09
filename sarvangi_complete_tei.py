@@ -5,7 +5,7 @@ new_header_content = """
 <teiHeader>
   <fileDesc>
     <titleStmt>
-      <title>Introduction</title>
+      <title>The Sarvāṅgī of Gopāldās</title>
     </titleStmt>
   </fileDesc>
   <sourceDesc>
@@ -27,5 +27,5 @@ for i in range(1, 127):
 tei += "</TEI>"
 
 soup = BeautifulSoup(tei, "xml")
-with open("sarvangi_complete.xml", "w", encoding="utf-8") as file:
+with open("sarvangi_of_gopaldas.xml", "w", encoding="utf-8") as file:
     file.write(soup.prettify())
